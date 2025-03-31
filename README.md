@@ -52,12 +52,15 @@ Seleccione el método de ordenamiento:
 4. Burbuja Mejorado
 5. Salir
 
-¿Desea ver los pasos? (true/false):
-true
-
 ¿Desea ordenar ascendentemente (A) o descendentemente (D)?:
 A
-```
 
+¿Desea ver los pasos? (true/false):
+true 
+
+```
 ---
+
+## Resultados Obtenidos
+Al implementar los métodos de ordenamiento burbuja, selección, inserción y burbuja mejorado he aprendido cómo funciona cada uno de ellos, identificar y analizar la eficiencia de cada método en cuanto a tiempo de ejecución y uso de memoria. Además, he aprendido sus posibles aplicaciones en programas de uso cotidiano, lo que me ha dado una comprensión más profunda de cómo elegir el algoritmo adecuado según el contexto.
 
