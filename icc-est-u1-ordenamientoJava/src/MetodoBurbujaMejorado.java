@@ -12,9 +12,8 @@ public class MetodoBurbujaMejorado {
                 contComparaciones++;
                 if (pasos){
                     System.out.println("Comparacion: " +contComparaciones + "->" +arreglo[j] + ">" +arreglo[j+1]);
-
                 }
-                if(isDes){
+                if(isDes){ //Ordena ascendente
                     if(arreglo[j] > arreglo[j + 1]){
                         aux = arreglo[j]; 
                         arreglo[j] = arreglo[j + 1];
@@ -25,7 +24,7 @@ public class MetodoBurbujaMejorado {
                         }
                     }
                         
-                } else {
+                } else { //descendente
                     if(arreglo[j] < arreglo[j + 1]){
                         aux = arreglo[j]; 
                         arreglo[j] = arreglo[j + 1];
@@ -40,8 +39,6 @@ public class MetodoBurbujaMejorado {
                     if (verificadorCambios == cambios){
                         System.out.println("No hay cambios por realizar");
                     }
-                }
-                if (pasos){
                     System.out.println("Estado actual");
                     imprimirArreglo(arreglo);
                     System.out.println();

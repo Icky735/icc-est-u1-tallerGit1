@@ -1,5 +1,6 @@
 /*
- METODOS ORDENAMIENTO OFICIAL
+ MÉTODOS DE ORDENAMIENTO 
+ Estructura de Datos
  Victoria Andrade
  */
 
@@ -13,13 +14,12 @@ public class App {
         boolean continuar = true; 
 
         while(continuar){
-            int[] arreglo = {10, 9, 21, 5, 15, 2, -1, 0};
+            int[] arreglo = {12, -7, 25, 0, -15, 33, 19, -22, 5, 48, -3, 27, -30, 14, 7, -1, 41, 20, -11, 8};
 
             MetodoBurbuja metodoBurbuja = new MetodoBurbuja(); //creamos un objeto
             MetodoSeleccion metodoSeleccion = new MetodoSeleccion();
             MetodoInsercion metodoInsercion = new MetodoInsercion();
             MetodoBurbujaMejorado metodoBurbujaMejorado = new MetodoBurbujaMejorado();
-
 
             System.out.println("Seleccione el método de Ordenamiento que desee");
             System.out.println("1. Burbuja");
@@ -34,9 +34,6 @@ public class App {
                 continuar = false;
                 break;
             }
-
-            //System.out.println("Desea ordenar Ascendente o Descendente (Escribir A o D)");
-            //char elegir = scanner.next().toUpperCase().charAt(0); //convierte lo que escriban a mayúscula
 
             char elegir = validaOrden(scanner);
 
@@ -131,11 +128,8 @@ public class App {
                     System.out.println("Total de comparaciones: " +resultados[0]);
                     System.out.println("Total de cambios: " +resultados[1]);
                     break;
-
             }
-
         }
-
         scanner.close();
     }
 
@@ -188,5 +182,4 @@ public class App {
         }
         return escribir;
     }  
-    
 }

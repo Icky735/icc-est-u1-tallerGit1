@@ -45,8 +45,6 @@ public class MetodoSeleccion {
                 if (verificadorCambios == cambios){
                     System.out.println("No hay cambios por realizar");
                 }
-            }
-            if (pasos){
                 System.out.println("Estado actual");
                 imprimirArreglo(arreglo);
                 System.out.println();
