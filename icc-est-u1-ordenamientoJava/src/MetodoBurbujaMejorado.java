@@ -11,7 +11,7 @@ public class MetodoBurbujaMejorado {
             for (int j = 0; j < arreglo.length - i - 1; j++){
                 contComparaciones++;
                 if (pasos){
-                    System.out.println("Comparacion: " +contComparaciones + "->" +arreglo[j] + ">" +arreglo[j+1]);
+                    System.out.println("Comparacion: " +contComparaciones + " -> " +arreglo[j] + " > " +arreglo[j+1]);
                 }
                 if(isDes){ //Ordena ascendente
                     if(arreglo[j] > arreglo[j + 1]){
@@ -20,7 +20,7 @@ public class MetodoBurbujaMejorado {
                         arreglo[j + 1] = aux; 
                         cambios++;
                         if(pasos){
-                            System.out.println("Intercambio: " +arreglo[j] + "<->" +arreglo[j + 1]);
+                            System.out.println("Intercambio: " +arreglo[j] + " <-> " +arreglo[j + 1]);
                         }
                     }
                         
@@ -31,7 +31,7 @@ public class MetodoBurbujaMejorado {
                         arreglo[j + 1] = aux; 
                         cambios++;
                         if(pasos){
-                            System.out.println("Intercambio: " +arreglo[j] + "<->" +arreglo[j + 1]);
+                            System.out.println("Intercambio: " +arreglo[j] + " <-> " +arreglo[j + 1]);
                         }
                     }
                 }
@@ -39,13 +39,11 @@ public class MetodoBurbujaMejorado {
                     if (verificadorCambios == cambios){
                         System.out.println("No hay cambios por realizar");
                     }
-                    System.out.println("Estado actual");
+                    System.out.println("Estado actual: ");
                     imprimirArreglo(arreglo);
                     System.out.println();
                 }
             }
-            System.out.println("Estado Actual ->");
-            //imprimirArreglo(arreglo);
 
         }
         int[] resultados = {contComparaciones, cambios};
